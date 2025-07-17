@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Image\**" />
+    <EmbeddedResource Remove="Image\**" />
+    <None Remove="Image\**" />
+    <Page Remove="Image\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Game.jpg" />
+    <None Remove="Images\Hunger.jpg" />
+    <None Remove="Images\Shiba.jpg" />
+    <None Remove="Images\Sleep.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\Game.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Hunger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Shiba.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Sleep.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

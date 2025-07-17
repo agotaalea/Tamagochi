@@ -1,0 +1,15 @@
+﻿<Window x:Class="Tamagochi.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tamagochi"
+        mc:Ignorable="d"
+        Title="Tamagochi Főmenü" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <TextBlock Text="Add meg a Tamagochi nevét:" Margin="0,0,0,10" />
+        <TextBox x:Name="NameTextBox" Width="200" Height="25" Margin="0,0,0,10" />
+        <Button Content="Indítás" Click="StartButton_Click" Width="100" Height="30" />
+        <Button Content="Betöltés" Click="LoadButton_Click" Height="30" Width="100" HorizontalAlignment="Left" />
+    </StackPanel>
+</Window>
